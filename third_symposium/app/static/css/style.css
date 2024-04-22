@@ -563,6 +563,10 @@ body {
   position: static;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
