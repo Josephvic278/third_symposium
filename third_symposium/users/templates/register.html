@@ -1,50 +1,16 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<div class="w-full py-7 bg-blue-300 text-xl">
-		<h2 class="">Hello world! (register)</h2>
-	</div>
-=======
-{% load compress %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3rd Symposium | Register
-    </title>
-    
+    <title>Symposium</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script type="module" crossorigin src="{% static 'js/index.js' %}"></script>
 </head>
-<body class="bg">
-    {% block content %}
-    <form method="post">
-        {% csrf_token %}
-        <p>Username</p><br>
-        <input type="text" name="username" id="username">
-        <p>Email Address</p><br>
-        <input type="email" name="email" id="email">
-        <p>First Name</p><br>
-        <input type="text" name="first_name" id="first_name">
-        <p>Last Name</p><br>
-        <input type="text" name="last_name" id="last_name">
-        <p>New Password</p><br>
-        <input type="password" name="new_password" id="new_password">
-        <p>Confirm Password</p><br>
-        <input type="password" name="password1" id="confirm_password"><br>
-        <div class="agree">
-        <input type="checkbox"><p>agree and continue</p>
-        <input type="submit" value="Sign Up">            
-        </div>
-
-    </form>
-    {% endblock %}
->>>>>>> 57e91d4c8e93447a6f16f6dc9e85f630f45fcf04
+<body>
+    <div id="root"></div>
 </body>
 </html>
+
